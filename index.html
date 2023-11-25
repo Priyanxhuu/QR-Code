@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>QR Code Generator</h2>
+        <div class="qrdata">
+            <p>Enter URL </p>
+            <input type="text" id="qrDataInput" placeholder="Enter a URL" required>
+        </div>
+        <div class="button">
+            <button onclick="generateQRCode()">Generate</button>
+        </div>
+        <div id="qrcode"></div>
+        <div class="button">
+            <button id="downloadBtn" style="display: none;" onclick="downloadQRCode()">Download</button>
+        </div>
+    </div>
+
+    <script src="qrcode.min.js"></script> 
+    <script src="script.js"></script> 
+</body>
+</html>
